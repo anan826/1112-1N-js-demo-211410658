@@ -1,10 +1,16 @@
+
+const o = 'o';
+const x = 'x';
+let turn = 0;
+let done = false;
+
 const resetBtn = document.querySelector('#reset');
 
 const allLi = document.querySelectorAll('#board li');
+const container =document.querySelector('#container')
 console.log('allLi', allLi);
 
 const checkWin = (player) => {
-
     let p = [];
     allLi.forEach( (item) => {
         p.push(item.classList.contains(player));
@@ -34,12 +40,54 @@ const reset = () => {
 
     allLi.forEach((item) => {
         item.textContent = '+';
-        item.classList = ''
+        item.classList = '';
+        container.style.backgroundColor ='#666';
+        turn = 0;
+        done = false;
     });
 }
 
+const winMessage = (player) => {
+    if(player === 'o'){
+        container.style.backgroundColor = 'rgba(144, 238, 144, 0.5)'
+    } else {
+        container.style.backgroundColor = 'rgba(240, 118, 128, 0.7)'
 
-console.log('checkWin(o)', checkWin('o'));
-console.log('checkWin(x)', checkWin('x'));
+    }alert(`player ${player} wins`)
+    }
+    
+
+allLi.forEach((item) => {
+    item.addEventListener('click', () => {
+        if (item.classList.contains('disabled')) {
+            alert('Already filled');
+            turn--;
+        } else if(!done && turn % 2 === 0){
+            item.textContent = 'O';
+            item.classList.add('o', 'disabled');
+            if(checkWin(o)){
+                winMessage(o);
+                done = true;
+            }
+        } else if (!done && turn % 2 == 1) {
+            item.textContent = 'X';
+            item.classList.add('x', 'disabled');
+            if(checkWin(x)){
+                winMessage(x);
+                done = true;
+            }
+        }
+
+        if (!done && turn < 8) {
+            turn++;
+        }else if(!done && turn >=8){
+            alert('tie');
+        }
+    })
+})
+
+
+//console.log('checkWin(o)', checkWin('o'));
+//console.log('checkWin(x)', checkWin('x'));
 
 resetBtn.addEventListener('click', reset);
