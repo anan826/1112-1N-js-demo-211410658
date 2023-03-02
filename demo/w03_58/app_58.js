@@ -1,6 +1,13 @@
 // local reviews data
 const reviews = [
   {
+    id: 0,
+    name: 'HENG-AN, LIN',
+    job: 'Information Security Adviser',
+    img: 'https://slyliryvslfzxeqslixp.supabase.co/storage/v1/object/public/demo-58/md_1N_img/myself.png',
+    text: "A information security expert,maybe good at wireless network security and IOT security, or full developer",
+  },
+  {
     id: 1,
     name: 'susan smith',
     job: 'web developer',
@@ -42,11 +49,34 @@ const randomBtn = document.querySelector('.random-btn');
 
 
 let currentItem = 0;
-window.addEventListener('DOMContentLoaded', ()=>{
-  const item = reviews[currentItem];
+
+const showReview = (person) => {
+  const item = reviews[person];
   console.log('item', item);
   img.src = item.img;
   author.textContent = item.name;
   job.textContent = item.job;
   info.textContent = item.info;
+}
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  showReview(currentItem);
 });
+
+nextBtn.addEventListener('click', ()=> {
+  currentItem++;
+  if (currentItem >= reviews.length){
+    currentItem = 0;
+  }
+  //console.log('currentItem', reviews[currentItem]);
+  showReview(currentItem);
+
+});
+prevBtn.addEventListener('click', ()=>{
+  currentItem--;
+  if (currentItem < 0){
+    currentItem = 4;
+  }
+  //console.log(currentItem);
+  showReview(currentItem);
+}); 
