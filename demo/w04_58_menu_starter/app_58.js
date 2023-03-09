@@ -29,11 +29,30 @@ const menu = [
     {
         id: 4,
         title: 'salad',
-        category: 'dinner',
+        category: 'salad',
         price: 14.59,
         img: './images/my-4.jpg',
         remote_img: 'https://slyliryvslfzxeqslixp.supabase.co/storage/v1/object/public/demo-58/md_1N_img/my-4.jpg',
         desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo velit odit ipsa distinctio, quos provident aliquam dolore rem voluptatibus, dolores suscipit reprehenderit optio? Harum sed dolorem error voluptas fugit.'
+    },
+    {
+        id: 5,
+        title: 'chocolate',
+        category: 'dessert',
+        price: 4.59,
+        img: './images/my-5.jpg',
+        remote_img: '',
+        desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo velit odit ipsa distinctio, quos provident aliquam dolore rem voluptatibus, dolores suscipit reprehenderit optio? Harum sed dolorem error voluptas fugit.'
+    },
+    {
+        
+        id: 6,
+        title: 'cake',
+        category: 'dessert',
+        price: 4.59,
+        img: './images/my-6.jpg',
+        remote_img: '',
+        
     }
 ];
 
@@ -71,6 +90,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 /*buttons*/
 const category = ['all', ...new Set(menu.map((item) => item.category))];
+/*const category = ['all', 'breakfast', 'lunch', 'dinner', 'shakes'];*/
 console.log(category);
 
 const displayMenuButtons = () => {
