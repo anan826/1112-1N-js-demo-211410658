@@ -60,6 +60,7 @@ const displayMenuButtons = () => {
           console.log('all', menu)
           displayMenuItems(menu);
         }else{
+          console.log(category, filterMenu);
           displayMenuItems(filterMenu);
         }
       });
