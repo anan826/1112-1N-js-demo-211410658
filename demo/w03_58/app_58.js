@@ -75,7 +75,7 @@ nextBtn.addEventListener('click', ()=> {
 prevBtn.addEventListener('click', ()=>{
   currentItem--;
   if (currentItem < 0){
-    currentItem = 4;
+    currentItem = (reviews.length-1);
   }
   //console.log(currentItem);
   showReview(currentItem);
