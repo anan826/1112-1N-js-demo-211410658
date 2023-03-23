@@ -33,4 +33,4 @@ export const students = [
     
 ];
 
-export const sdata = [80,90,35,60,75,40];
+export const sdata = [80,95,35,60,75,45];
