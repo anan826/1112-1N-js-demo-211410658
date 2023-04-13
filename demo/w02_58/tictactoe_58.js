@@ -1,11 +1,13 @@
 
 const o = 'o';
 const x = 'x';
+//回合
 let turn = 0;
+//遊戲是否結束
 let done = false;
 
+// # = class
 const resetBtn = document.querySelector('#reset');
-
 const allLi = document.querySelectorAll('#board li');
 const container =document.querySelector('#container')
 console.log('allLi', allLi);
