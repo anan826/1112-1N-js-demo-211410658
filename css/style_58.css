@@ -163,9 +163,9 @@ a{
 }
 /* banner section */
 .banner-section{
-  background-image: url('../img/banner.jpg');
+  /* background-image: url('../img/banner.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   height: 700px;
   width: 100%;
   display: block;
