@@ -23,4 +23,14 @@
 
 ### 右上 icons ，左邊第一個(<i class="fab fa-github"></i>)，點選後要連上你的 Github repo URL。
 
-![](https://slyliryvslfzxeqslixp.supabase.co/storage/v1/object/public/demo-58/md_1N_img/project-p3.png)
+![](https://slyliryvslfzxeqslixp.supabase.co/storage/v1/object/public/demo-58/md_1N_img/project-p3-1.png)
+![](https://slyliryvslfzxeqslixp.supabase.co/storage/v1/object/public/demo-58/md_1N_img/project-p3-2.png)
+
+```
+20e0923 anan826 Sun Apr 16 11:49:07 2023 +0800  project feature 3
+```
+
+### 右上 icons ，左邊第二個(<i class="fab fa-git-alt"></i>)，點選後要連上你的 commit logs URL。
+
+![](https://slyliryvslfzxeqslixp.supabase.co/storage/v1/object/public/demo-58/md_1N_img/project-p4-1.png)
+![](https://slyliryvslfzxeqslixp.supabase.co/storage/v1/object/public/demo-58/md_1N_img/project-p4-2.png)
