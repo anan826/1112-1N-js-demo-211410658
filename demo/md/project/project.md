@@ -18,5 +18,9 @@
 ![](https://slyliryvslfzxeqslixp.supabase.co/storage/v1/object/public/demo-58/md_1N_img/project-p2-2.png)
 
 ```
-
+20ed63d anan826 Sun Apr 16 11:46:21 2023 +0800  project feature 2
 ```
+
+### 右上 icons ，左邊第一個(<i class="fab fa-github"></i>)，點選後要連上你的 Github repo URL。
+
+![](https://slyliryvslfzxeqslixp.supabase.co/storage/v1/object/public/demo-58/md_1N_img/project-p3.png)
