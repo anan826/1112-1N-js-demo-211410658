@@ -32,7 +32,7 @@ const showClassDemo =(week) =>{
             showDemo.innerHTML = `<iframe src="./demo/w03_58/w03_58.html" width="100%" height="100%" />`;
           break;
         case 'W4-md':
-            showDemo.innerHTML = `<iframe src="./demo/w04_58/w04_58.html" width="100%" height="100%" />`;
+            showDemo.innerHTML = `<iframe src="./demo/w04_58_menu_starter/w04_58.html" width="100%" height="100%" />`;
           break;
         case 'W5menu-md':
             showDemo.innerHTML = `<iframe src="./demo/w05_58_menu_starter/w05_58.html" width="100%" height="100%" />`;
