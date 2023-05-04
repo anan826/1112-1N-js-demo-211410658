@@ -4,7 +4,10 @@ const heading3 = document.querySelector('.three');
 const heading4 = document.querySelector('.four');
 
 const btn = document.querySelector('.btn');
-
+btn.addEventListener('click', async ()=>{
+    const result = await displayColor();
+    console.log('result', result);
+})
 // btn.addEventListener('click', ()=>{
 //     addColor(1000, heading1, 'red')
 //     .then(()=>addColor(2000, heading2, 'green'))
@@ -12,6 +15,20 @@ const btn = document.querySelector('.btn');
 //     .then(()=>addColor(500, heading4, 'orange'))
 //     .catch((error)=>console.log(error));
 // });
+
+
+const displayColor = async ()=>{
+    try{
+        await addColor(1000, heading1, 'red');
+        await addColor(2000, heading2, 'green');
+        await addColor(1000, heading3, 'blue');
+        await addColor(500, heading4, 'orange');
+        console.log('success')
+    }catch(error){
+        console.log(error);
+    }
+}
+
 
 
 
