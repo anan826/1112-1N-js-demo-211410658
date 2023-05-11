@@ -42,7 +42,7 @@ const displayMenuButtons = () => {
         return `
         <button type="button" class="filter-btn" data-id="${btn}">${btn}</button>`
     });
-    //console.log('displayMenuButtons before join', displayMenuButtons);
+    //console.log('displayMenuButtons before join', displayMenuButtons);s
     displayMenuButtons = displayMenuButtons.join('');
     //console.log('displayMenuButtons after join', displayMenuButtons);
     btnContainer.innerHTML = displayMenuButtons;
