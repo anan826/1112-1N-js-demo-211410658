@@ -9,7 +9,7 @@ const getData = async (url)=>{
         const response = await fetch(url);
         const data = response.json();
         console.log('response', response);
-        console.log('data', data);
+        console.log('fetch data', data);
         return data;
     }catch(error){
         console.log(error);
