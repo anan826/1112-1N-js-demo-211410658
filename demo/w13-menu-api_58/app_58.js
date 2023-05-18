@@ -1,7 +1,7 @@
 const suPaBaseUrl = 'https://slyliryvslfzxeqslixp.supabase.co'
 const suPaBase_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNseWxpcnl2c2xmenhlcXNsaXhwIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc3NTM5MjcsImV4cCI6MTk5MzMyOTkyN30.EfMLtysg4jUBZz8xe0_Yov2ylzQczrlz6V58KYTHahw'
 
-
+//var supa = supabase.createClient(url, key);
 
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
@@ -72,6 +72,7 @@ const displayMenuButtons = () => {
 
 const fetchData = async () => {
   try{
+    // let {data, error} = await supa.from('menu_58').select('*');
     const response = await fetch(url, {
       method:'GET',
       headers:{
