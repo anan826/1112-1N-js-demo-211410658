@@ -22,6 +22,9 @@ const showClassDemo =(week) =>{
         case 'W6':
             showDemo.innerHTML = `<iframe src="./demo/w06_58/p3_58/p3_58.html" width="100%" height="100%" />`;
         break;
+        case 'W14':
+          showDemo.innerHTML = `<iframe src="./demo/w14-homework_58/index.html" width="100%" height="100%" />`;
+        break;
         case 'W1-md':
             showDemo.innerHTML = `<iframe src="./demo/w01_58/w01_58.html" width="100%" height="100%" />`;
           break;
@@ -43,5 +46,8 @@ const showClassDemo =(week) =>{
         case 'W6-md':
             showDemo.innerHTML = `<iframe src="./demo/w06_58/w06_58.html" width="100%" height="100%" />`;
           break;
+        case 'W14-md':
+          showDemo.innerHTML = `<iframe src="./demo/w14-homework_58/w14-homework_58.html" width="100%" height="100%" />`;
+        break;
     }
 }
