@@ -82,7 +82,33 @@ input[type='text']{
     }
 }
 
+.single-meal{
+    margin: 30px auto;
+    width: 70%;
 
+}
+.single-meal img{
+    width: 300px;
+    border: 4px #fff solid;
+    border-radius: 2px;
+    
+}
+.single-meal ul{
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+.single-meal li{
+    color: #2d2013;
+    background-color:#fff;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
 
 @media(max-width:800px) {
     .meals{

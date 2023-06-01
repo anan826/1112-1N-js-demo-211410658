@@ -23,8 +23,8 @@ const searchMeal = (e) =>{
                 mealsElement.innerHTML = data.meals.map((meal)=>{
                     return `
                         <div class="meal">
-                            <img src="${meal.strMealThumb}" data-mealID="${meal.idMeal}" />
-                            <div class="meal-info">
+                            <img src="${meal.strMealThumb}" />
+                            <div class="meal-info" data-mealID="${meal.idMeal}">
                             <h3>${meal.strMeal}</h3>
                             </div>
                         </div>
@@ -40,8 +40,60 @@ const searchMeal = (e) =>{
 
 }
 
+const getMealById =(mealID) =>{
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
+    .then(response=>response.json())
+    .then(data=>{
+        console.log('single meal', data)
+        const meal = data.meals[0]
+        addMealToDOM(meal)
+    })
+}
 
+const addMealToDOM = (meal)=>{
+    const ingredients =[];
+    for(let i =1;i<=20;i++){
+        if(meal[`strIngredient${i}`]){
+            ingredients.push(`${meal[`strIngredient${i}`]}-${meal[`strMeasure${i}`]}`);
+        }else{
+            break;
+        }
+    }
+    console.log(`ingredients`, ingredients)
 
-
+    singleMealElement.innerHTML =`
+        <div class="single-meal">
+            <h1>${meal.strMeal}</h1>
+            <img src="${meal.strMealThumb}"/>
+            <div class="main">
+                <p>${meal.strInstructions}</p>
+                <h2>Ingredients</h2>
+                <ul> ${ingredients.map(img =>
+                    {
+                        return `<li>${img}</li>`
+                    }).join('')
+                    }
+                </ul>
+            </div>
+        
+        </div>
+        `
+}
 //Event Listeners
 submit.addEventListener('click', searchMeal);
+mealsElement.addEventListener('click', e=>{
+    console.log('e.path', e.composedPath());
+    const composedPath = e.composedPath();
+    const mealInfo = composedPath.find(item => {
+        if(item.classList){
+            return item.classList.contains('meal-info')
+        }else{
+            return false
+        }
+    })
+    if(mealInfo){
+        console.log('mealInfo', mealInfo)
+        const mealID = mealInfo.getAttribute('data-mealID')
+        getMealById(mealID);
+    }
+})
