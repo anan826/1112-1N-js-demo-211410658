@@ -52,6 +52,7 @@ const menu = [
         price: 4.59,
         img: './images/my-6.jpg',
         remote_img: '',
+        desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi illo velit odit ipsa distinctio, quos provident aliquam dolore rem voluptatibus, dolores suscipit reprehenderit optio? Harum sed dolorem error voluptas fugit.'
         
     }
 ];
