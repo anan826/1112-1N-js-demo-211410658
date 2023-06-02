@@ -79,6 +79,17 @@ const addMealToDOM = (meal)=>{
         </div>
         `
 }
+
+const getRandomMeal = () => {
+    fetch('https://www.themealdb.com/api/json/v1/1/random.php')
+      .then(response => response.json())
+      .then(data => {
+        console.log('random', data)
+        const randomMeal = data.meals[0];
+        addMealToDOM(randomMeal);
+      });
+  };
+  
 //Event Listeners
 submit.addEventListener('click', searchMeal);
 mealsElement.addEventListener('click', e=>{
@@ -97,3 +108,5 @@ mealsElement.addEventListener('click', e=>{
         getMealById(mealID);
     }
 })
+
+random.addEventListener('click', getRandomMeal);
