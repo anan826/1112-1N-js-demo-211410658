@@ -1,5 +1,5 @@
 const suPaBaseUrl = 'https://slyliryvslfzxeqslixp.supabase.co'
-const suPaBase_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNseWxpcnl2c2xmenhlcXNsaXhwIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc3NTM5MjcsImV4cCI6MTk5MzMyOTkyN30.EfMLtysg4jUBZz8xe0_Yov2ylzQczrlz6V58KYTHahw'
+const suPaBase_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNseWxpcnl2c2xmenhlcXNsaXhwIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYyMjM3MzMsImV4cCI6MjAwMTc5OTczM30.jgxHa2FgL30YAMfWKzY15g1x39Dwvgmrt0vynq8KqlI'
 
 //var supa = supabase.createClient(url, key);
 
