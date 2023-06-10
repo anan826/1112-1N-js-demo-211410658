@@ -65,7 +65,7 @@ const showClassDemo =(week) =>{
           showDemo.innerHTML = `<iframe src="./Finance_API_javascript/f2.html" width="100%" height="100%" />`;
           break;
         case 'f3':
-          showDemo.innerHTML = `<iframe src="./Finance_API_javascript/f1.html" width="100%" height="100%" />`;
+          showDemo.innerHTML = `<iframe src="./Finance_API_javascript/f3.html" width="100%" height="100%" />`;
           break;
         case 'experience':
           showDemo.innerHTML = `<iframe src="./Finance_API_javascript/experience.html" width="100%" height="100%" />`;
