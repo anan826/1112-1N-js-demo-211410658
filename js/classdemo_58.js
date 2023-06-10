@@ -55,5 +55,20 @@ const showClassDemo =(week) =>{
         case 'W15-md':
           showDemo.innerHTML = `<iframe src="./demo/w15-store-product_58/index.html" width="100%" height="100%" />`;
           break;
+        case 'api-md':
+          showDemo.innerHTML = `<iframe src="./Finance_API_javascript/md.html" width="100%" height="100%" />`;
+          break;
+        case 'f1':
+          showDemo.innerHTML = `<iframe src="./Finance_API_javascript/f1.html" width="100%" height="100%" />`;
+          break;
+        case 'f2':
+          showDemo.innerHTML = `<iframe src="./Finance_API_javascript/f2.html" width="100%" height="100%" />`;
+          break;
+        case 'f3':
+          showDemo.innerHTML = `<iframe src="./Finance_API_javascript/f1.html" width="100%" height="100%" />`;
+          break;
+        case 'experience':
+          showDemo.innerHTML = `<iframe src="./Finance_API_javascript/experience.html" width="100%" height="100%" />`;
+          break;
     }
 }
